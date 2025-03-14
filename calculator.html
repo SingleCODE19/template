@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Price Calculator - Arjun Marble Polish</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Arjun Marble</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="calculator.html" class="active">Calculator</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="resources.html">Resources</a></li>
+        </ul>
+        <div class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Calculator Section -->
+  <section class="calculator-section">
+    <div class="container">
+      <div class="page-header">
+        <h1>Service Price Calculator</h1>
+        <p>Estimate the cost of your stone polishing project</p>
+      </div>
+      
+      <div class="calculator-card">
+        <div class="form-group">
+          <label for="service">Select Service</label>
+          <select id="service" class="form-control">
+            <option value="">Choose a service</option>
+            <option value="marble-polish">Marble Polish (₹40 per sq.ft)</option>
+            <option value="granite-polish">Granite Polish (₹35 per sq.ft)</option>
+            <option value="terrazzo-polish">Terrazzo Polish (₹30 per sq.ft)</option>
+            <option value="crystallization">Crystallization (₹50 per sq.ft)</option>
+            <option value="home-cleaning">Home Cleaning (₹10 per sq.ft)</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="area">Area (in square feet)</label>
+          <input type="number" id="area" class="form-control" placeholder="Enter area" min="1">
+        </div>
+        
+        <div class="form-group">
+          <label for="location">Select Location</label>
+          <select id="location" class="form-control">
+            <option value="urban">Urban (No extra charge)</option>
+            <option value="suburban">Suburban (+₹500)</option>
+            <option value="rural">Rural (+₹1000)</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label>Additional Services</label>
+          <div class="checkbox-group">
+            <label><input type="checkbox" id="sealing"> Sealing Treatment (+₹10 per sq.ft)</label>
+            <label><input type="checkbox" id="repair"> Crack Repair (+₹15 per sq.ft)</label>
+            <label><input type="checkbox" id="stain"> Stain Removal (+₹8 per sq.ft)</label>
+          </div>
+        </div>
+        
+        <button id="calculate-btn" class="btn btn-primary">Calculate Price</button>
+        
+        <div id="result" class="result-section">
+          <h3>Estimated Price</h3>
+          <div id="price-breakdown"></div>
+          <div id="total-price" class="total-price"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Arjun Marble Polish</h3>
+          <p>Premium stone polishing and restoration services.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: info@arjunmarble.com</p>
+          <p>Phone: +91 9876543210</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 Arjun Marble Polish. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="calculator.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
